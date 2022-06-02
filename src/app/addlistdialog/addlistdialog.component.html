@@ -1,0 +1,5 @@
+<form>
+    <h1>todo list name</h1>
+    <input type="text" #name placeholder="list name">
+    <button type="button" (click)="addList(name.value)" (click)="name.value = ''">add</button>
+</form>

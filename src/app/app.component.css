@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bottomright{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px; 
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+}
+
+mat-list{
+    padding-left: 70px;
+    padding-top: 100px;
+    width: 300px;
+}

@@ -1,0 +1,21 @@
+<div class="center" id="box" width="10px">
+    <h1>{{name}}</h1> 
+
+    <div class="button">
+         <input type="text" #todoname placeholder="add todo">
+         <button mat-mini-fab color="primary" type="submit" (click)="addToDo(todoname.value)" (click)="todoname.value = ''">
+              +
+         </button>
+    </div>
+
+    <ul *ngFor="let a of todos | async">
+          <li >
+               {{a.todo}}
+               <button (click)="removeToDo(a.todo)">
+                    <h3>remove</h3>
+               </button>
+          </li>
+        
+    </ul>
+
+</div>
